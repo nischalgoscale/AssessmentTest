@@ -12,15 +12,15 @@ public class GoogleSearchTest extends CommonTestFunctions{
   @Test
   public void googletest() throws InterruptedException 
   {
-	
-	reportLog("Navigate to Google");
+	String keyToSearch = "wedding";
+	//Navigate to Google
 	googlepage.openApplication();
 	
-	reportLog("Enter Wedding Keyword");
-	googlepage.enterTextInSearchBox("wedding");
+	//Enter Wedding Keyword
+	googlepage.enterTextInSearchBox(keyToSearch);
 	
-	reportLog("Select all options in list and assert that all option contain search keyword");
-	googlepage.findDataInSuggestionList("wedding");
+	//Select all options in list and assert that all option contain search keyword
+	googlepage.verifyAutoSuggestions(keyToSearch);
   }
 
 

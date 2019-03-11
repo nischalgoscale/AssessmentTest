@@ -38,7 +38,7 @@ public class GooglePage extends CommonPageFunctions{
 		GoogleSearchField.sendKeys(keyToSearch);
 	}
 	
-	public void findDataInSuggestionList(String keyToSearch){
+	public void verifyAutoSuggestions(String keyToSearch){
 		try {
 			Thread.sleep(1000);
 		} catch (InterruptedException e) {
@@ -46,12 +46,12 @@ public class GooglePage extends CommonPageFunctions{
 		}
 		
 		
-		List allOptions = driver.findElements(By.xpath("//ul[@role='listbox']/li"));
+		List<WebElement> allOptions = driver.findElements(By.xpath("//ul[@role='listbox']/li"));
 		
 		for (int i = 0; i < allOptions.size(); i++) {
 			String option = ((WebElement) allOptions.get(i)).getText();
 			System.out.println(option);
-			Assert.assertTrue(option.contains(keyToSearch), "Option doesn't contain searched key");
+			Assert.assertTrue(option.contains(keyToSearch));
 		}
 	}
 }
