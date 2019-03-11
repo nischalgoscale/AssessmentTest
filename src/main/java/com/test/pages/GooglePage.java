@@ -11,7 +11,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
 import org.testng.Assert;
 
 import com.test.common.CommonPageFunctions;
@@ -45,7 +44,7 @@ public class GooglePage extends CommonPageFunctions{
 			e.printStackTrace();
 		}
 		
-		
+		//Storing auto suggestion options in list and traversing the same
 		List<WebElement> allOptions = driver.findElements(By.xpath("//ul[@role='listbox']/li"));
 		
 		for (int i = 0; i < allOptions.size(); i++) {
