@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+    <line>
+      <![CDATA[</br>Navigate to Google]]>
+    </line>
+    <line>
+      <![CDATA[</br>Enter Wedding Keyword]]>
+    </line>
+    <line>
+      <![CDATA[</br>Select all options in list and assert that all option contain search keyword]]>
+    </line>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="54884" started-at="2019-03-11T17:15:54Z" finished-at="2019-03-11T17:16:49Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="54884" started-at="2019-03-11T17:15:54Z" finished-at="2019-03-11T17:16:49Z">
+      <class name="com.test.scripts.GoogleSearchTest">
+        <test-method status="PASS" signature="browserSetUp()[pri:0, instance:com.test.scripts.GoogleSearchTest@7d9d1a19]" name="browserSetUp" is-config="true" duration-ms="30565" started-at="2019-03-11T22:45:54Z" finished-at="2019-03-11T22:46:24Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browserSetUp -->
+        <test-method status="PASS" signature="googletest()[pri:0, instance:com.test.scripts.GoogleSearchTest@7d9d1a19]" name="googletest" duration-ms="23668" started-at="2019-03-11T22:46:25Z" finished-at="2019-03-11T22:46:49Z">
+          <reporter-output>
+            <line>
+              <![CDATA[</br>Navigate to Google]]>
+            </line>
+            <line>
+              <![CDATA[</br>Enter Wedding Keyword]]>
+            </line>
+            <line>
+              <![CDATA[</br>Select all options in list and assert that all option contain search keyword]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- googletest -->
+        <test-method status="PASS" signature="closeAllBrowser()[pri:0, instance:com.test.scripts.GoogleSearchTest@7d9d1a19]" name="closeAllBrowser" is-config="true" duration-ms="2715" started-at="2019-03-11T22:46:51Z" finished-at="2019-03-11T22:46:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeAllBrowser -->
+      </class> <!-- com.test.scripts.GoogleSearchTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
